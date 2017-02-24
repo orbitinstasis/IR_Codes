@@ -1,0 +1,185 @@
+
+begin remote
+
+  name  Pacman.cf
+  bits           16
+  flags SPACE_ENC|CONST_LENGTH
+  eps            30
+  aeps          100
+
+  header       8941  4392
+  one           595  1606
+  zero          595   494
+  ptrail        592
+  repeat       8942  2162
+  pre_data_bits   16
+  pre_data       0xF7
+  gap          106791
+  toggle_bit_mask 0x0
+
+      begin codes
+          On                       0xC03F
+          Off                      0x40BF
+          Brightness               0x807F
+          Speed                    0x00FF
+          White                    0xE01F
+          Flash                    0xD02F
+          Strobe                   0xF00F
+          Fade                     0xC837
+          Smooth                   0xE817
+          Red                      0x20DF
+          Green                    0xA05F
+          Blue                     0x609F
+          Orange                   0x10EF
+          Yellow                   0x30CF
+          Yellow:Green             0x08F7
+          Yellow:Green_2           0x28D7
+          Light_Green              0x906F
+          Cyan                     0xB04F
+          Turqoise                 0x8877
+          Light_Blue               0xA857
+          White:Indigo             0x50AF
+          Indigo                   0x50AF
+          Purple                   0x48B7
+          Reddi:Purple             0x6897
+      end codes
+
+end remote
+
+
+begin remote
+
+  name  LED_Strip.cf
+  bits           16
+  flags SPACE_ENC|CONST_LENGTH
+  eps            30
+  aeps          100
+
+  header       9004  4432
+  one           615  1603
+  zero          615   482
+  ptrail        621
+  repeat       8996  2186
+  pre_data_bits   16
+  pre_data       0xFF
+  gap          107569
+  toggle_bit_mask 0x0
+
+      begin codes
+          Power                    0x02FD
+          Skip                     0x827D
+          Brightness:Decrease      0xBA45
+          Brightness:Increase      0x3AC5
+          Blue                     0xA25D
+          Green                    0x9A65
+          Red                      0x1AE5
+          Orange                   0x2AD5
+          Light_Orange             0x0AF5
+          Yellow                   0x38C7
+          Yellow_Greeny            0x18E7
+          Cyan                     0xAA55
+          Cyan_Light               0x8A75
+          Turqoise                 0xB847
+          Light_Blue               0x9867
+          Blue_Two                 0x926D
+          Purple                   0x58A7
+          Violet                   0x7887
+          Violet_Cold              0xB24D
+          White                    0x00FF22DD
+          Violet:Light             0x32CD
+          White:Warm               0x12ED
+          Turqoise:Light           0xF807
+          Up:Red                   0x28D7
+          Up:Green                 0xA857
+          Up:Blue                  0x6897
+          Red:Down                 0x08F7
+          Green:Down               0x8877
+          Blue:Down                0x48B7
+          Quick                    0xE817
+          Slow                     0xC837
+          Auto                     0xF00F
+          DIY1                     0x30CF
+          DIY2                     0xB04F
+          DIY3                     0x708F
+          DIY4                     0x10EF
+          DIY5                     0x906F
+          DIY6                     0x50AF
+          Flash                    0xD02F
+          Jump3                    0x20DF
+          Jump7                    0xA05F
+          Fade3                    0x609F
+          Fade7                    0xE01F
+      end codes
+
+end remote
+
+
+begin remote
+
+  name  Samsung_40Inch
+  bits           16
+  flags SPACE_ENC
+  eps            30
+  aeps          100
+
+  header       4522  4458
+  one           607  1606
+  zero          607   493
+  ptrail        602
+  pre_data_bits   16
+  pre_data       0xE0E0
+  post_data_bits  4
+  post_data      0x0
+  gap          42457
+  min_repeat      1
+  toggle_bit_mask 0x0
+
+      begin codes
+          Power                    0x40BF
+          Source                   0x807F
+          Volume:Up                0xE01F
+          Volume:Down              0xD02F
+          Programme:Up             0x48B7
+          Programme:Down           0x08F7
+          Mute                     0xF00F
+          Guide                    0xF20D
+          TTX/MIX                  0x34CB
+          1                        0x20DF
+          2                        0xA05F
+          3                        0x609F
+          4                        0x10EF
+          5                        0x906F
+          6                        0x50AF
+          7                        0x30CF
+          7                        0x30CF
+          8                        0xB04F
+          9                        0x708F
+          0                        0x8877
+          Channel_List             0xD629
+          Menu                     0x58A7
+          Home                     0x6E91
+          Content                  0x9E61
+          Tools                    0xD22D
+          Info                     0xF807
+          Return                   0x1AE5
+          Exit                     0xB44B
+          Enter                    0x16E9
+          Up                       0x06F9
+          Down                     0x8679
+          Left                     0xA659
+          Right                    0x46B9
+          Red:A                    0x36C9
+          Green:B                  0x28D7
+          Yellow:C                 0xA857
+          Blue:D                   0x6897
+          Alarm                    0xF40B
+          3D                       0xF906
+          Subtitles                0xA45B
+          Stop                     0x629D
+          Rewind                   0xA25D
+          Forward                  0x12ED
+          Play                     0xE21D
+          Pause                    0x52AD
+      end codes
+
+end remote
